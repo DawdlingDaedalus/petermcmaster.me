@@ -1,0 +1,47 @@
+/* HTML Styles */
+
+html {
+scroll-behavior: smooth;
+}
+
+/* Basic Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Sections Styles */
+
+section {
+    min-height: 100vh; /* This will give each section a minimum height of the viewport height, making the site scrollable */
+    padding: 50px 15px;
+    box-sizing: border-box;
+}
+
+#home { background-color: #e57373; }
+#about { background-color: #81c784; }
+#projects { background-color: #64b5f6; }
+#portfolio { background-color: #ffd54f; }
+#testimonials { background-color: #ba68c8; }
+#resume { background-color: #6f79ad; }
+#contact { background-color: #4db6ac; }
+
+/* Social Media Icon Styles (mainly in footer) */
+
+.socials {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 15px; /* Space between icons */
+}
+
+.socials a {
+    color: #ffffff; /* White icons */
+    font-size: 20px; /* Adjust if you want bigger or smaller icons */
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+.socials a:hover {
+    color: #ddd; /* Lighter color on hover */
+}
+
