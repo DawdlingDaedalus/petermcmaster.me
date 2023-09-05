@@ -3,7 +3,7 @@ footer {
     color: #ffffff; /* White text */
     text-align: center; /* Center the text horizontally */
     padding: 10px 0; /* 10px padding top and bottom */
-    font-size: 14px; /* Adjust if you want a different font size */
+    font-size: 12px; /* Adjust if you want a different font size */
     width: 100%; /* Ensures the footer stretches across the full width */
     position: relative; /* Make sure it's not sticking */
 }

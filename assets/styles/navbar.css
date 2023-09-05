@@ -9,9 +9,9 @@
     /* Centers the nav items horizontally */
     align-items: flex-end;
     /* Aligns the nav items to the bottom of the container */
-    height: 80px;
+    height: 50px;
     /* Adjust this for the desired navbar height */
-    background-color: #333;
+    background-color: #000030;
     padding: 0 15px;
 }
 
@@ -59,8 +59,8 @@
         text-align: center;
         position: absolute;
         top: 80px; /* height of the navbar */
-        left: 0;
-        background-color: #333;
+        nav-right: 0;
+        background-color: #000030;
     }
 
     .nav-list.active {
