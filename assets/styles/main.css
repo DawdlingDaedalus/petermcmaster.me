@@ -6,33 +6,41 @@
     --e-color: #3A555E;
 */
 
-/* Font Families */
+/* General Resetting */
+/* Reset margins and paddings */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures padding doesn't add to the total width/height */
+}
 
+/* General Styles */
+/* HTML Base Styles */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 105px; /* Ensures the navbar doesn't cover the top of the section */
+}
+
+@media (max-width: 768px) {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 0px; /* Ensures the navbar doesn't cover the top of the section */
+    }
+}
+
+/* Font Families */
 /* Base font */
 body, h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
 /* Alternative font 1 */
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, p {
     font-family: 'Open Sans', sans-serif;
 }
 
 /* Alternative font 2 */
-caption, .caption-text {
+caption, .caption-text, li, ul {
     font-family: 'Roboto', sans-serif;
-}
-
-/* HTML Styles */
-
-html {
-scroll-behavior: smooth;
-}
-
-/* Basic Styles */
-
-body {
-    font-family: Arial, sans-serif;
-    position: relative;
 }
 

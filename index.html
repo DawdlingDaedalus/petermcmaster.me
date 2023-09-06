@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/navbar.css">
-    <link rel="stylesheet" href="assets/styles/sections.css">
+    <link rel="stylesheet" href="assets/styles/content.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
 
 </head>
 
 <body>
     
+    <!-- Navbar -->
     <header>
 
         <nav class="navbar">
@@ -40,6 +41,7 @@
             <div class="nav-list">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#testimonials">Testimonials</a>
@@ -51,52 +53,63 @@
 
     </header>
 
-    <!-- Sections corresponding to Navbar items -->
-    <section id="home">
-        <h1>Home</h1>
-        <p>Welcome to my website. Here's some introductory content... lorem ipsum</p>
-    </section>
+    <!-- Content -->
+    <div class="all-content" id="home">
 
-    <section id="about">
-        <h1>About</h1>
-        <p>Here's some information about me... lorem isum</p>
-    </section>
+        <!-- Greeting Text -->
+        <div class="greeting-container">
+            <div class="greeting-text">
+                <h1>Hi, I'm Peter 👋🏼</h1>
+                <h6>Machine Learning Engineer</h6>
+            </div>
+        </div>
 
-    <section id="projects">
-        <h1>Projects</h1>
-        <p>Here are some of the projects I've worked on... lorem ipsum</p>
-    </section>
+        <!-- Background Image for Parallax Effect -->
+        <div class="parallax-background"></div>
 
-    <section id="portfolio">
-        <h1>Portfolio</h1>
-        <p>Check out some of my work... lorem ipsum</p>
-    </section>
+        <div class="content">
 
-    <section id="testimonials">
-        <h1>Testimonials</h1>
-        <p>See what others have to say about my work... lorem ipsum</p>
-    </section>
+            <!-- Sections corresponding to Navbar items -->
+            <section id="about">
+                <h1>About</h1>
+                <p>Here's some information about me... lorem isum</p>
+            </section>
 
-    <section id="resume">
-        <h1>Resume</h1>
-        <p>Here's my professional journey... lorem ipsum</p>
-    </section>
+            <section id="experience">
+                <h1>Experience</h1>
+                <p>Here's my professional experience... lorem ipsum</p>
+            </section>
 
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>Get in touch with me... lorem ipsum</p>
-    </section>
+            <section id="projects">
+                <h1>Projects</h1>
+                <p>Here are some of the projects I've worked on... lorem ipsum</p>
+            </section>
 
-    <!-- Mobile: Hamburger Menu Toggle Action  -->
-    <script src = "assets/scripts/hamburgerToggle.js"></script>
+            <section id="portfolio">
+                <h1>Portfolio</h1>
+                <p>Check out some of my work... lorem ipsum</p>
+            </section>
 
-    <!-- Mobile: Show/Hide Navbar according to Scroll Direction -->
-    <script src="assets/scripts/navbarToggle.js"></script>
-    
-    <!-- Smooth Scrolling support across all browsers  -->
-    <script src="assets/scripts/smoothScroll.js"></script>
+            <section id="testimonials">
+                <h1>Testimonials</h1>
+                <p>See what others have to say about my work... lorem ipsum</p>
+            </section>
 
+            <section id="resume">
+                <h1>Resume</h1>
+                <p>Here's my professional journey... lorem ipsum</p>
+            </section>
 
+            <section id="contact">
+                <h1>Contact</h1>
+                <p>Get in touch with me... lorem ipsum</p>
+            </section>
+        
+        </div>
+
+    </div>
+
+    <!-- Footer -->
     <footer>
 
         <div class="socials">
@@ -113,7 +126,20 @@
         </div>
         
     </footer>
+
+    <!-- Mobile: Hamburger Menu Toggle Action  -->
+    <script src = "assets/scripts/hamburgerToggle.js"></script>
+
+    <!-- Mobile: Show/Hide Navbar according to Scroll Direction -->
+    <script src="assets/scripts/navbarToggle.js"></script>
+
+    <!-- Parallax Effect -->
+    <script src="assets/scripts/parallax.js"></script>
     
+    <!-- Smooth Scrolling support across all browsers  -->
+    <script src="assets/scripts/smoothScroll.js"></script>
+
+
 </body>
 
 </html>

@@ -6,8 +6,8 @@
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-
-    height: 105px;
+    /* WARN: if changing navbar height, change scroll-padding-top in main.css */
+    height: 105px; /* navbar height */
     position: fixed;
     top: 0;
     left: 0;
@@ -22,6 +22,7 @@
 .nav-brand {
     position: relative;
     padding: 5px 0px;
+    transition: transform 1.2s ;
 }
 
 .nav-brand a {
@@ -30,6 +31,7 @@
     font-size: 32px;
     color: #fff;
     text-decoration: none;
+    transition: transform 1s ease-in-out;
 }
 
 /* nav-divider */
@@ -72,30 +74,7 @@
 
 @media (max-width: 768px) {
 
-    /* hide/show navbar on scroll event -- Mobile only */
-    .navbar.hide {
-        transform: translateY(-100%); 
-        transition: transform 1s ease; /* smoothly transition for hide/show navbar */
-    }
-
-    /* Menu Toggle (Hamburger Menu) */
-    .menu-toggle {
-        flex-shrink: 0;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-    
-    .bar {
-        background-color: #fff;
-        height: 3px;
-        width: 25px;
-        margin: 3px;
-        transition: 1s;
-    }
-
-    /* navbar */
+    /* navbar -- 'ROW' for mobile view */
     .navbar {
         display: flex;
         justify-content: start;
@@ -107,7 +86,7 @@
         position: fixed;
         z-index: 1000; /* Ensures the navbar is always on top */
 
-        transition: transform 1s ease; /* smoothly transition for hide/show navbar */
+        transition: transform 0.6s ease; /* smoothly transition for hide/show navbar */
     }
 
     /* nav-brand -- "Peter McMaster" Mobile View */
@@ -117,11 +96,35 @@
         display: flex;  /* Center the <a> tag within nav-brand */
         align-items: center;  /* Vertically centers the <a> tag */
         justify-content: center;  /* Horizontally centers the <a> tag */
+        transition: transform 1.2s ease;
     }
 
     /* nav-divider -- Hide from Mobile View */
     .nav-divider {
         display: none;
+    }
+
+    /* Menu Toggle (Hamburger Menu) */
+    .menu-toggle {
+        flex-shrink: 0;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    /* hide/show navbar on scroll event -- Mobile only */
+    .navbar.hide {
+        transform: translateY(-100%); 
+        transition: transform 1.2s ease; /* smoothly transition for hide/show navbar */
+    }
+    
+    .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 25px;
+        margin: 3px;
+        transition: 1.4s;
     }
 
     /* nav-list -- Open from Hamburger Menu on Mobile View */
@@ -148,7 +151,8 @@
     }
 
     .nav-list.active {
-        height: 250px;
+        height: 330px;
+        width: 40%;
         display: block;
     }
 }

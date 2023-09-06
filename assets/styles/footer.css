@@ -6,6 +6,7 @@ footer {
     font-size: 12px; /* Adjust if you want a different font size */
     width: 100%; /* Ensures the footer stretches across the full width */
     position: relative; /* Make sure it's not sticking */
+    z-index: 1000; 
 }
 
 /* Social Media Icon Styles */
