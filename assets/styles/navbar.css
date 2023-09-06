@@ -1,74 +1,134 @@
+/* Desktop Display */
 /* Navbar Styles */
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+    height: 105px;
     position: fixed;
     top: 0;
+    left: 0;
+
     z-index: 1000; /* Ensures the navbar is always on top */
-    display: flex;
-    justify-content: center;
-    /* Centers the nav items horizontally */
-    align-items: flex-end;
-    /* Aligns the nav items to the bottom of the container */
-    height: 50px;
-    /* Adjust this for the desired navbar height */
-    background-color: #000030;
-    padding: 0 15px;
+    align-items: center;
+    background-color: #12004a;
+    padding: 10px 10px;
 }
 
-.navbar a {
-    margin: 0 15px;
-    /* Space between the items */
+/* nav-brand "Peter McMaster" */
+.nav-brand {
+    position: relative;
+    padding: 5px 0px;
+}
+
+.nav-brand a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 32px;
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    /* Padding around the text */
+}
+
+/* nav-divider */
+.nav-divider {
+    width: 65%;
+    border-color: #fff;
+}
+
+/* nav-list: Navbar Links */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.nav-list a {
+    padding: 0px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+
+    color: #fff;
     border: 1px solid transparent;
-    /* Transparent border for consistent spacing */
     transition: background-color 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
-.navbar a:hover {
-    background-color: #555;
-    /* Background color on hover */
-    border: 1px solid #fff;
-    /* Border color on hover */
+.nav-list a:hover{
+    background-color: #4C7AA6;
+    border: 1px solid #96ccff;
 }
 
-/* Hamburger Menu Styles */
-
+/* Menu Toggle (Hamburger Menu -- Hidden on Desktop View */
 .menu-toggle {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    cursor: pointer;
+    display: none;
 }
 
-.bar {
-    background-color: #fff;
-    height: 3px;
-    width: 25px;
-    margin: 3px;
-    transition: 0.3s;
-}
-/* Media Query for Navbar */
+
+/* Mobile View */
+/* Navbar Styles */
 
 @media (max-width: 768px) {
-    .nav-list {
+
+    /* Menu Toggle (Hamburger Menu) */
+    .menu-toggle {
+        flex-shrink: 0;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 25px;
+        margin: 3px;
+        transition: 1s;
+    }
+
+    /* navbar */
+    .navbar {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+
+        width: 100%;
+        height: 75px;
+        position: fixed;
+        z-index: 1000; /* Ensures the navbar is always on top */
+    }
+
+    /* nav-brand -- "Peter McMaster" Mobile View */
+    .nav-brand {
+        text-align: center;
+        flex-grow: 1;  /* Let nav-brand grow and consume the available space */
+        display: flex;  /* Center the <a> tag within nav-brand */
+        align-items: center;  /* Vertically centers the <a> tag */
+        justify-content: center;  /* Horizontally centers the <a> tag */
+    }
+
+    /* nav-divider -- Hide from Mobile View */
+    .nav-divider {
         display: none;
+    }
+
+    /* nav-list -- Open from Hamburger Menu on Mobile View */
+    .nav-list {
+        /* for animation */
+        height:0;
+        overflow: hidden;
+        transition: height 0.5s ease;
+
         width: 100%;
         text-align: center;
         position: absolute;
-        top: 80px; /* height of the navbar */
+        top: 60px;
         nav-right: 0;
         background-color: #000030;
-    }
-
-    .nav-list.active {
-        display: block;
-    }
-
-    .menu-toggle {
-        display: flex;
     }
 
     .nav-list a {
@@ -76,5 +136,11 @@
         width: 100%;
         display: block;
         border-bottom: 1px solid #575757; /* Optional: add a border between links */
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-list.active {
+        height: 250px;
+        display: block;
     }
 }

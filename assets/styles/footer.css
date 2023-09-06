@@ -7,3 +7,21 @@ footer {
     width: 100%; /* Ensures the footer stretches across the full width */
     position: relative; /* Make sure it's not sticking */
 }
+
+/* Social Media Icon Styles */
+
+.socials {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 15px; /* Space between icons */
+}
+
+.socials a {
+    color: #ffffff; /* White icons */
+    font-size: 20px; /* Adjust if you want bigger or smaller icons */
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+.socials a:hover {
+    color: #226e97; /* Lighter color on hover */
+}
