@@ -17,6 +17,6 @@ document.addEventListener("scroll", function() {
         lastScrollY = scrolled;
         requestAnimationFrame(updateParallax);
     }
-});
+}, { passive: true });
 
 requestAnimationFrame(updateParallax);

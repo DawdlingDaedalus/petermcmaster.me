@@ -1,3 +1,4 @@
+// Throttle function
 function throttle(func, wait) {
     var lastFunc;
     var lastRan;
@@ -20,12 +21,15 @@ function throttle(func, wait) {
 }
 
 let lastScrollTop = 0;
-const tolerance = 100;  // Adjust this value based on your needs. navbar will react after 50 pixels of scroll
+const tolerance = 100;  // 100 pixels of scroll before navbar hides/shows, adjust as needed.
 
-const handleNavbar = throttle(function() {
+const navbarElement = document.querySelector(".navbar");
+
+function navbarLogic () {
     // Detects if on mobile view
     if(window.innerWidth <= 768) {
         let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
         // Always show if at top of page
         if (currentScrollTop < 300) {
             document.querySelector(".navbar").classList.remove("hide");
@@ -43,6 +47,8 @@ const handleNavbar = throttle(function() {
         }
         lastScrollTop = currentScrollTop;
     }
-}, 300);  // Throttle for 200 milliseconds. You can adjust this value as needed
+}
+
+const handleNavbar = throttle(navbarLogic, 300); // Throttle 300ms, adjust as needed.
 
 window.addEventListener("scroll", handleNavbar, false);
