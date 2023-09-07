@@ -1,6 +1,6 @@
 /* Experience */
 #experience {
-    background-color: #6f6580;
+    background-image: linear-gradient(to bottom right, #4773bf, #120063);
 }
 
 .experience-grid {
@@ -11,16 +11,33 @@
     margin: 0 auto;
 }
 
-.experience-grid-item {
+.experience-grid .experience-grid-item {
     /* Style each item if needed */
-    border: 1px solid black;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+    border: solid black;
     padding: 20px;
     box-sizing: border-box; /* ensures padding and border are included in the element's total width and height */
 }
 
+.one-space {
+    min-width: 50px;
+}
+
+#one img {
+    transform: 50%;
+}
+
 /* Mobile view */
-@media (max-width: 768px) { /* adjust breakpoint as needed */
+@media screen and (max-width: 768px) { /* adjust breakpoint as needed */
     .experience-grid {
         grid-template-columns: 1fr; /* single column layout */
+    }
+
+    #one img {
+        margin: 0;
+        align-items: center;
     }
 }

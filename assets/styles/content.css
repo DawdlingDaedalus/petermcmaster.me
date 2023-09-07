@@ -47,7 +47,9 @@
 /* Section Base Styles */
 section:not(#home) {
     width: 100%;
-    padding: 50px 15px;
+    padding: 40px 80px;
+    border-style: double;
+    border-color: #c6c6c6;
 }
 
 @media screen and (max-width: 768px) {

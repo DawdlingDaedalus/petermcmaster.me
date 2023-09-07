@@ -1,7 +1,6 @@
 /* About */
 #about {
     background-image: linear-gradient(to bottom right, #9d3873, #12004a);
-    padding: 40px 80px;
 }
 
 .about-content {
@@ -12,21 +11,24 @@
 .about-image, .about-text {
     display: flex;
     flex: 1;
+    flex-grow: 1;
     min-width: 0;
 }
 
 .about-image {
     justify-content: center;
     align-items: center;
-    padding: 20px 20px;
+    padding: auto 10%;
 }
 
 .about-text {
+    flex-direction: column; /* stack text vertically */
     color: white;
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: auto;
+    padding: auto 10%;
+    max-width: 600px;
     text-align: justify;
 }
 
@@ -42,5 +44,9 @@
     .about-content {
         flex-direction: column; /* Stacks the children vertically */
         margin: auto;
+    }
+    
+    .about-text {
+        padding: 10% 10%;
     }
 }
