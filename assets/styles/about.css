@@ -1,0 +1,46 @@
+/* About */
+#about {
+    background-image: linear-gradient(to bottom right, #9d3873, #12004a);
+    padding: 40px 80px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-image, .about-text {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+}
+
+.about-image {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.about-text {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    text-align: justify;
+}
+
+.about-image img {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stacks the children vertically */
+        margin: auto;
+    }
+}

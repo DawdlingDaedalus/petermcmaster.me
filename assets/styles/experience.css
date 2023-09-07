@@ -1,0 +1,26 @@
+/* Experience */
+#experience {
+    background-color: #6f6580;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-grid-item {
+    /* Style each item if needed */
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box; /* ensures padding and border are included in the element's total width and height */
+}
+
+/* Mobile view */
+@media (max-width: 768px) { /* adjust breakpoint as needed */
+    .experience-grid {
+        grid-template-columns: 1fr; /* single column layout */
+    }
+}
