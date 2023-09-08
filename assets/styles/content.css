@@ -4,7 +4,6 @@
     position: relative;
     overflow: hidden;  /* Ensure no spillover */
     padding: 70px 0 0 0; /* 85px for navbar */
-    z-index: -100;
 }
 
 .content-background {
@@ -13,7 +12,6 @@
 
 .content {
     position: relative;
-    background: transparent; /* ensures we see the background image behind the content */
     z-index: 10; /* Content is always on top */
     padding: 40px 10% 0 10%; /* padding on sides and top */
 }

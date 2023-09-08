@@ -10,13 +10,17 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap">
+        <!-- fonts: Montserrat 100 200 400 600, Open Sans 300 400 600, Roboto 300 400 600 -->
+        
         <link rel="stylesheet" href="assets/styles/main.css">
         <link rel="stylesheet" href="assets/styles/navbar.css">
         <link rel="stylesheet" href="assets/styles/greeting.css">
         <link rel="stylesheet" href="assets/styles/content.css">
         <link rel="stylesheet" href="assets/styles/about.css">
         <link rel="stylesheet" href="assets/styles/experience.css">
+        <link rel="stylesheet" href="assets/styles/testimonials.css">
+        <link rel="stylesheet" href="assets/styles/contact.css">
         <link rel="stylesheet" href="assets/styles/footer.css">
 
     </head>
@@ -47,9 +51,9 @@
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
-                    <a href="#portfolio">Portfolio</a>
                     <a href="#testimonials">Testimonials</a>
-                    <a href="#resume">Resume</a>
+                    <a href="https://github.com/mcmasterml" target="_blank" aria-label="Github">Portfolio</a>
+                    <a href="assets/documents/Peter_McMaster-Resume.pdf" download>Resume</a>
                     <a href="#contact">Contact</a>
                 </div>
 
@@ -103,29 +107,101 @@
                         <div class="content-header">
                             <h1>Experience</h1>
                             <h6>Professional Experience</h6>
+                            <hr class="experience-divider"></hr>
                         </div>
                         <div class="experience-grid">
-                            <div class="experince-grid-item" id="one">
-                                <div class="one-space"></div>
-                                <div class="one-image">
+                            <!-- ML Bootcamp -->
+                            <div class="col-one row-one">
+                                <div class="col-one-space"></div>
+                                <div class="col-one-image">
                                     <img src="assets/images/experience/graduation-cap.svg" alt="suitcase icon">
                                 </div>
                             </div>
-                            <div class="experince-grid-item">2</div>
-                            <div class="experince-grid-item">3</div>
-                            <div class="experince-grid-item">4</div>
-                            <div class="experince-grid-item">5</div>
-                            <div class="experince-grid-item">6</div>
-                            <div class="experince-grid-item">7</div>
-                            <div class="experince-grid-item">8</div>
-                            <div class="experince-grid-item">9</div>
-                            <div class="experince-grid-item">10</div>
-                            <div class="experince-grid-item">11</div>
-                            <div class="experince-grid-item">12</div>
-                            <div class="experince-grid-item">13</div>
-                            <div class="experince-grid-item">14</div>
-                            <div class="experince-grid-item">15</div>
-                            <div class="experince-grid-item">16</div>
+                            <div class="col-two row-one">
+                                <p>
+                                    <span class="experience-dates">October 2023 - August 2023</span>
+                                </p>
+                            </div>
+                            <div class="col-three row-one">
+                                <p>
+                                    <span class="experience-title">Machine Learning Engineering Bootcamp,</span><br><span class="experience-title">UC San Diego Extension & Springboard</span>
+                                </p>
+                            </div>
+                            <div class="col-four row-one">
+                                <p>
+                                    <span class="experience-description">Project-based education in advanced Machine Learning techniques</span>
+                                </p>
+                            </div>
+                            <!-- Yardi -->
+                            <div class="col-one row-two">
+                                <div class="col-one-space"></div>
+                                <div class="col-one-image">
+                                    <img src="assets/images/experience/suitcase.svg" alt="suitcase icon">
+                                </div>
+                            </div>
+                            <div class="col-two row-two">
+                                <p>
+                                    <span class="experience-dates">August 2021 - April 2023</span>
+                                </p>
+                            </div>
+                            <div class="col-three row-two">
+                                <p>
+                                    <span class="experience-title">Quality Assurance,</span>
+                                    <br>
+                                    <span class="experience-title">Yardi Systems Inc.</span>
+                                </p>
+                            </div>
+                            <div class="col-four row-two">
+                                <p>
+                                    <span class="experience-description">Part of the Development Team working on Web & Mobile app solutions for Real Estate Industry. Documented bugs, bug fixes, and release notes for 10+ release cycles for the rapidly-growing Maintenance IQ product. Prioritized workloads and bug fixes for a product as it transitioned from less than 50 clients to over 200 clients.</span>
+                                </p>
+                            </div>
+                            <!-- Omaze -->
+                            <div class="col-one row-three">
+                                <div class="col-one-space"></div>
+                                <div class="col-one-image">
+                                    <img src="assets/images/experience/suitcase.svg" alt="suitcase icon">
+                                </div>
+                            </div>
+                            <div class="col-two row-three">
+                                <p>
+                                    <span class="experience-dates">August 2021 - February 2022</span>
+                                </p>
+                            </div>
+                            <div class="col-three row-three">
+                                <p>
+                                    <span class="experience-title">Data Science Intern,</span>
+                                    <br>
+                                    <span class="experience-title">Omaze</span>
+                                </p>
+                            </div>
+                            <div class="col-four row-three">
+                                <p>
+                                    <span class="experience-description">Worked with Data Engineering Team to architect Machine Learning solutions. Researched ML Service providers, served as a point of contact to set up an ML Ops platform for the company. Took courses for the AWS Cloud Practitioner Certification. Developed analytics and ML projects that resulted in value added for the Sales, Marketing, and Site Reliability Teams.</span>
+                                </p>
+                            </div>
+                            <!-- Imlak'esh -->
+                            <div class="col-one row-four">
+                                <div class="col-one-space"></div>
+                                <div class="col-one-image">
+                                    <img src="assets/images/experience/suitcase.svg" alt="suitcase icon">
+                                </div>
+                            </div>
+                            <div class="col-two row-four">
+                                <p>
+                                    <span class="experience-dates">April 2021 - August 2021</span>
+                                </p>
+                            </div>
+                            <div class="col-three row-four">
+                                <p>
+                                    <span class="experience-title">Data Analytics Intern, Imlak'esh Organics</span>
+                                </p>
+                            </div>
+                            <div class="col-four row-four">
+                                <p>
+                                    <span class="experience-description">Evaluated market and sales trends to understand competitive environments and assess current strategies. Used Excel to analyze current sales performance and predict future sales. Conducted Gap Analysis that resulted in 6% gain in total profits.</span>
+                                </p>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -140,16 +216,6 @@
                     </section>
                 </div>
 
-                <!-- Portfolio -->
-                <div class="content">
-                    <section id="portfolio">
-                        <div class="content-header">
-                            <h1>Portfolio</h1>
-                            <h6>Professional Portfolio</h6>
-                        </div>
-                    </section>
-                </div>
-
                 <!-- Testimonials -->
                 <div class="content">
                     <section id="testimonials">
@@ -157,15 +223,49 @@
                             <h1>Testimonials</h1>
                             <h6>What Others Say</h6>
                         </div>
-                    </section>
-                </div>
-
-                <!-- Resume -->
-                <div class="content">
-                    <section id="resume">
-                        <div class="content-header">
-                            <h1>Resume</h1>
-                            <h6>My Professional Journey</h6>
+                        <div class="testimonials-container">
+                            <!-- testimonial 1 -->
+                            <div class="testimonial-one">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/profile/bigPeter.png" alt="Profile Image">
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>
+                                        <span class="testimonial"><i>I have worked with Peter Before, and let me say... WOW. He is so hard working and intelligent. I wish I could adopt him but he is a grown man and also an ex-colleague. I mean, talk about home drama! Where was I? Oh, right, Peter is a rad dude!</i></span>
+                                        <br>
+                                        <br>
+                                        <span class="testimonial-author"><b>- Peter McMaster</b></span>                                    
+                                    </p>
+                                </div>                               
+                            </div>
+                            <!-- testimonial 2 -->
+                            <div class="testimonial-two">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/profile/bigPeter.png" alt="Profile Image">
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>
+                                        <span class="testimonial"><i>I have worked with Peter Before, and let me say... WOW. He is so hard working and intelligent. I wish I could adopt him but he is a grown man and also an ex-colleague. I mean, talk about home drama! Where was I? Oh, right, Peter is a rad dude!</i></span>
+                                        <br>
+                                        <br>
+                                        <span class="testimonial-author"><b>- Peter McMaster</b></span>                                   
+                                    </p>
+                                </div>                                
+                            </div>
+                            <!-- testimonial 3 -->
+                            <div class="testimonial-three">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/profile/bigPeter.png" alt="Profile Image">
+                                </div>
+                                <div class="testimonial-text">
+                                    <p>
+                                        <span class="testimonial"><i>I have worked with Peter Before, and let me say... WOW. He is so hard working and intelligent. I wish I could adopt him but he is a grown man and also an ex-colleague. I mean, talk about home drama! Where was I? Oh, right, Peter is a rad dude!</i></span>
+                                        <br>
+                                        <br>
+                                        <span class="testimonial-author"><b>- Peter McMaster</b></span>
+                                    </p>
+                                </div>                               
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -176,6 +276,17 @@
                         <div class="content-header">
                             <h1>Contact</h1>
                             <h6>Get in touch with me</h6>
+                        </div>
+                        <!-- Contact Form -->
+                        <div class="contact-form">
+                            <form action="/submit_form" method="POST">
+                                <input type="text"  name="name" placeholder="Name" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="text" name="subject" placeholder="Subject">
+                                <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                                <button type="submit">Send</button>
+                            </form>
+                        </div>
                     </section>
                 </div>
             </div>
