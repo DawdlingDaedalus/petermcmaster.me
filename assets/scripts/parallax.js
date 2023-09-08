@@ -13,7 +13,7 @@ function updateParallax() {
 document.addEventListener("scroll", function() {
     scrolled = window.scrollY;
 
-    if (Math.abs(scrolled - lastScrollY) > 4) { // tweak this value for performance vs responsiveness
+    if (Math.abs(scrolled - lastScrollY) > 2) { // tweak this value for performance vs responsiveness
         lastScrollY = scrolled;
         requestAnimationFrame(updateParallax);
     }

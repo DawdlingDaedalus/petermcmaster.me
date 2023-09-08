@@ -17,6 +17,15 @@
     max-width: 600px;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-form {
+        margin-top: 60px;
+    }
+    .contact-form form {
+        width: 60%;
+    }
+}
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: rgb(165, 165, 165);
