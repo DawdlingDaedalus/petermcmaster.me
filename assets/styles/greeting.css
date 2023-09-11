@@ -23,9 +23,9 @@
 }
 
 .greeting-container .greeting-text {
-    background-color: rgb(255, 255, 255, 0.0); /* White background with 80% opacity */
+    background-color: rgb(255, 255, 255, 0.1); /* White background with 80% opacity */
     padding: 50px;
-    margin: 20px 0; /* Add some margin to separate it from other sections */
+    margin: 20px 0;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Optional shadow to give a floating appearance */
     border-style: ridge;
     border-color: rgb(150, 205, 218)
@@ -63,6 +63,6 @@
 
 @media screen and (max-width: 768px) {
     .greeting-space {
-        height: 50vh; /* based on viewport height */
+        height: 35vh; /* based on viewport height */
     }
 }

@@ -8,36 +8,32 @@
     flex-wrap: wrap;
 }
 
-.about-image, .about-text {
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
-    min-width: 0;
+/* WARN: 'about-content' is a flex-container for 
+the 'about-flex-image' and 'about-flex-text'. 
+'about-flex-image' and 'about-flex-text' have
+div-children 'about-image' and 'about-flex'.
+These final div-chilren allowed for padding and margins
+don't play nice with flex apparently.
+    *** Create an issue with css Flex *** */
+
+.about-flex-image, .about-flex-text {
+    flex: 1; /*not working? see about-text margin*/
 }
 
-.about-image {
-    justify-content: center;
-    align-items: center;
-    padding: auto 10%;
+.about-flex-text {
+    color: white; /*working*/
+    text-align: justify; /*working*/
+}
+
+.about-flex-image img {
+    width: 70%; /*working*/
+    max-width: 500px; /*working*/
 }
 
 .about-text {
-    flex-direction: column; /* stack text vertically */
-    color: white;
-    justify-content: center;
-    align-items: center;
+    padding: 80px 40px 0 40px;
     margin: auto;
-    padding: auto 10%;
-    max-width: 600px;
-    text-align: justify;
-}
-
-.about-image img {
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin: auto;
-    max-width: 500px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -46,7 +42,7 @@
         margin: auto;
     }
     
-    .about-text {
+    .about-flex-text {
         padding: 10% 10%;
     }
 }
