@@ -43,10 +43,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.contact-form textarea {
-    resize: vertical;
-}
-
 .contact-form button {
     cursor: pointer;
     padding: 10px 20px;

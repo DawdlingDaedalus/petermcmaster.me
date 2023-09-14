@@ -26,19 +26,25 @@ don't play nice with flex apparently.
 }
 
 .about-flex-image img {
-    width: 70%; /*working*/
-    max-width: 500px; /*working*/
+    width: 70%; 
+    max-width: 500px;
+    padding: 20px;
 }
 
-.about-text {
-    padding: 80px 40px 0 40px;
+.about-image {
     margin: auto;
     text-align: center;
 }
 
+.about-text {
+    margin: auto;
+    text-align: center;
+    padding: 20px 40px;
+}
+
 @media screen and (max-width: 768px) {
     .about-content {
-        flex-direction: column; /* Stacks the children vertically */
+        flex-direction: column; /* Stacks vertically */
         margin: auto;
     }
     
