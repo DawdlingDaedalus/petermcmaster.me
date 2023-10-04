@@ -7,7 +7,7 @@
     height: 100vh;
     z-index: -2; /* Background is always behind the content */
     will-change: transform; /* hint to css for performance */
-    background: url('../images/background/LA.jpg') center center;
+    background: url('../images/LA.jpg') center center;
     background-size: cover;
 }
 

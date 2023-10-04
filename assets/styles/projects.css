@@ -1,0 +1,12 @@
+.eyespy-project {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    align-items: center;
+}
+
+iframe {
+    width: 800px;
+    height: 500px;
+    border: 0;
+}
