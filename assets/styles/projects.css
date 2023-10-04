@@ -1,3 +1,8 @@
+#projects {
+    background-image: linear-gradient(to bottom right, #261f4e, #504439);
+}
+
+
 .eyespy-project {
     display: flex;
     flex-direction: column;

@@ -1,12 +1,126 @@
 /* About */
 #about {
-    background-image: linear-gradient(to bottom right, #9d3873, #12004a);
+    width: 100%;
+    max-width: 1250px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+    background-image: linear-gradient(to bottom right, #2d3760, #1d1423);
+}
+
+#about .content-header h1 {
+    padding-top: 40px;
+}
+
+.about-divider {
+    width: 80%;
+    border-color: #fff;
 }
 
 .about-content {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
+
+.about-content-image {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content-image img {
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+}
+
+.about-content-text {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 15px;
+}
+
+.about-blurb {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+}
+
+.about-blurb-icon img {
+    flex: 1;
+    width: 65px;
+    padding: 30px 15px;
+}
+
+.about-blurb-text {
+    flex: 3;
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.about-blurb-text h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 780px) {
+
+    .about-content-image img {
+        max-width: 250px;
+        box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-stack {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px 15px;
+    }
+
+    .about-blurb {
+        display: flex;
+        flex-direction: row;
+        min-width: 200px;
+        max-width: 370px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .about-blurb-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-blurb-icon img {
+        min-width: 80px;
+    }
+
+    .about-blurb-text {
+        flex: 3;
+        color: white;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .about-blurb-text h3 {
+        margin: 0;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+}
+
 
 /* WARN: 'about-content' is a flex-container for 
 the 'about-flex-image' and 'about-flex-text'. 
@@ -15,40 +129,40 @@ div-children 'about-image' and 'about-flex'.
 These final div-chilren allowed for padding and margins
 don't play nice with flex apparently.
     *** Create an issue with css Flex *** */
-
+/* 
 .about-flex-image, .about-flex-text {
-    flex: 1; /*not working? see about-text margin*/
-}
+    flex: 1; 
+} */ /*not working? see about-text margin*/
 
-.about-flex-text {
-    color: white; /*working*/
-    text-align: justify; /*working*/
-}
+/* .about-flex-text {
+    color: white;
+    text-align: justify;
+} */
 
-.about-flex-image img {
+/* .about-flex-image img {
     width: 70%; 
     max-width: 500px;
     padding: 20px;
-}
+} */
 
-.about-image {
+/* .about-image {
     margin: auto;
     text-align: center;
-}
+} */
 
-.about-text {
+/* .about-text {
     margin: auto;
     text-align: center;
     padding: 20px 40px;
-}
+} */
 
 @media screen and (max-width: 768px) {
-    .about-content {
-        flex-direction: column; /* Stacks vertically */
+    /* .about-content {
+        flex-direction: column;
         margin: auto;
     }
     
     .about-flex-text {
         padding: 10% 10%;
-    }
+    } */
 }
