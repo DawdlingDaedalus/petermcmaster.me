@@ -4,7 +4,7 @@ const successMessage = document.querySelector('.success-message');
 const errorMessage = document.querySelector('.error-message');
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent traditional form submission
+    e.preventDefault(); // Prevent html inline default
 
     fetch('/submit_form.php', {
         method: 'POST',
