@@ -324,11 +324,12 @@
                         </div>
                         <!-- Contact Form -->
                         <div class="contact-form">
-                            <form action="/submit_form" method="POST">
+                            <form action="/submit_form.php" method="POST">
                                 <input type="text"  name="name" placeholder="Name" required>
                                 <input type="email" name="email" placeholder="Email" required>
                                 <input type="text" name="subject" placeholder="Subject">
                                 <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                                <div class="g-recaptcha" data-sitekey="6LdacHgoAAAAACcKtFM6kmQLttIGxikoNnZVAcyI"></div>
                                 <button type="submit">Send</button>
                             </form>
                         </div>
@@ -356,7 +357,7 @@
         </footer>
 
         <!-- Mobile: Hamburger Menu Toggle Action  -->
-        <script src = "assets/scripts/hamburgerToggle.js"></script>
+        <script src="assets/scripts/hamburgerToggle.js"></script>
 
         <!-- Mobile: Show/Hide Navbar according to Scroll Direction -->
         <script src="assets/scripts/navbarToggle.js"></script>
