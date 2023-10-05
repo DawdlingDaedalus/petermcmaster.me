@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $mail->send();
             http_response_code(200);  // OK
-            echo json_encode(['success' => true]); // For success
+            echo json_encode(['success' => true, "message" => "Message sent successfully!"]); // For success
             exit; // Stop further processing
         } catch (Exception $e) {
             http_response_code(500); // Internal Server Error

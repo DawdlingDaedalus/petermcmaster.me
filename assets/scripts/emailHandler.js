@@ -1,4 +1,9 @@
-document.querySelector('form').addEventListener('submit', function(e) {
+// Create references
+const form = document.querySelector('form');
+const successMessage = document.querySelector('.success-message');
+const errorMessage = document.querySelector('.error-message');
+
+form.addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent traditional form submission
 
     fetch('/submit_form.php', {
@@ -7,13 +12,16 @@ document.querySelector('form').addEventListener('submit', function(e) {
     })
     .then(response => response.json())
     .then(data => {
+        form.style.display = 'none'; // Hide the form
+
         if (data.success) {
-            alert("Message sent successfully!");
+            successMessage.style.display = 'block'; // Display success message
         } else {
-            alert(data.message); // Display the error message from the server
+            errorMessage.style.display = 'block'; // Display error message
         }
     })
     .catch(error => {
-        alert("An error occurred while processing your request. Please try again later.");
+        form.style.display = 'none'; // Hide the form
+        errorMessage.style.display = 'block'; // Display error message
     });
 });
