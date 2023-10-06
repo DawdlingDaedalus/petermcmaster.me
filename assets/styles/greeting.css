@@ -18,16 +18,13 @@
     align-items: center;
     flex-direction: row;
     position: relative;
-    z-index: 1; /* It will ensure the greeting-container stays above the parallax-background */
-    margin-top: 20vh;
+    margin-top: 25vh;
     margin-bottom: 33vh;
-    
 }
 
 .greeting-text {
-    background-color: rgb(255, 255, 255, 0.4); /* White background with 80% opacity */
-    padding: 50px;
-    margin: 20px 0;
+    background-color: rgba(188, 188, 188, 0.646); /* opaque grey behind text */
+    padding: 40px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Optional shadow to give a floating appearance */
 }
 
@@ -57,14 +54,24 @@
 }
 
 @media screen and (max-width: 768px) {
-    .greeting-space {
-        height: 35vh; /* based on viewport height */
+    .greeting-container {  /* unchanged */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+        margin-top: 20vh;
+        margin-bottom: 33vh;
     }
 
-    .greeting-container {
-        background-color: rgb(255, 255, 255, 0.9); /* White background with 80% opacity */
-        padding: 5%;
-        margin: 20px 0;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6); /* Optional shadow to give a floating appearance */
+    .greeting-text {
+        background-color: rgb(255, 255, 255, 0.4); /* opaque white behind text */
+        width: 87%;
     }
+
+    .greeting-text h1 {
+        font-size: 48px;
+    }
+
+
 }
