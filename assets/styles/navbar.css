@@ -58,8 +58,8 @@
 }
 
 .nav-list a:hover{
-    background-color: #2c2044;
-    border: 1px solid #a1aee0;
+    background-color: #322c3b;
+    border: 1px solid #8f98be;
     transition: background-color 0.5s ease;
     transition: border 0.5s ease;
 }
