@@ -1,28 +1,21 @@
 footer {
-    background-image: linear-gradient(#36363a, #050306);
-    color: #ffffff; /* White text */
-    text-align: center; /* Center the text horizontally */
-    padding: 10px 0; /* 10px padding top and bottom */
-    font-size: 12px; /* Adjust if you want a different font size */
-    width: 100%; /* Ensures the footer stretches across the full width */
-    position: relative; /* Make sure it's not sticking */
-    z-index: 1000; 
+    background-image: linear-gradient(#49494f, #050306);
+    color: rgb(211, 211, 211);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    width: 100%;
+    position: relative;
+    z-index: 10; 
 }
-
-/* Social Media Icon Styles */
 
 .socials {
     display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    gap: 15px; /* Space between icons */
+    justify-content: center;
+    gap: 15px;
 }
 
 .socials a {
-    color: #ffffff; /* White icons */
-    font-size: 20px; /* Adjust if you want bigger or smaller icons */
-    transition: 0.3s; /* Smooth transition for hover effect */
-}
-
-.socials a:hover {
-    color: #226e97; /* Lighter color on hover */
+    color: rgb(211, 211, 211);
+    font-size: 20px;
 }

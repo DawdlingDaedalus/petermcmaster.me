@@ -2,7 +2,7 @@
 
 #testimonials {
     min-width: 1px;
-    background-image: linear-gradient(to bottom left, #6c5941, #10152b);
+    background-image: linear-gradient(to bottom left, #3e3155, #10152b);
 }
 
 .testimonials-container {
@@ -57,6 +57,11 @@
 
 .testimonial-header {
     text-align: center;
+    margin-top: 0.5rem;
+}
+
+.testimonial-header h5 {
+    margin-top: 0.5rem;
 }
 
 .testimonial-one .testimonial-text {
