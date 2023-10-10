@@ -12,7 +12,7 @@
 
 .about-divider {
     width: 80%;
-    border-color: #fff;
+    border-color: rgb(211, 211, 211);
 }
 
 .about-content {
@@ -62,7 +62,7 @@
 
 .about-blurb-text {
     flex: 3;
-    color: white;
+    color: rgb(211, 211, 211);
     font-size: 14px;
     line-height: 1.6;
 }
@@ -119,50 +119,4 @@
         padding: 10px 0;
         font-size: 18px;
     }
-}
-
-
-/* WARN: 'about-content' is a flex-container for 
-the 'about-flex-image' and 'about-flex-text'. 
-'about-flex-image' and 'about-flex-text' have
-div-children 'about-image' and 'about-flex'.
-These final div-chilren allowed for padding and margins
-don't play nice with flex apparently.
-    *** Create an issue with css Flex *** */
-/* 
-.about-flex-image, .about-flex-text {
-    flex: 1; 
-} */ /*not working? see about-text margin*/
-
-/* .about-flex-text {
-    color: white;
-    text-align: justify;
-} */
-
-/* .about-flex-image img {
-    width: 70%; 
-    max-width: 500px;
-    padding: 20px;
-} */
-
-/* .about-image {
-    margin: auto;
-    text-align: center;
-} */
-
-/* .about-text {
-    margin: auto;
-    text-align: center;
-    padding: 20px 40px;
-} */
-
-@media screen and (max-width: 768px) {
-    /* .about-content {
-        flex-direction: column;
-        margin: auto;
-    }
-    
-    .about-flex-text {
-        padding: 10% 10%;
-    } */
 }

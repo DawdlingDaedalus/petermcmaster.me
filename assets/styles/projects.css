@@ -1,5 +1,5 @@
 #projects {
-    background-image: linear-gradient(to bottom right, #261f4e, #504439);
+    background-image: linear-gradient(to bottom right, #261f4e, #696144);
 }
 
 
@@ -11,23 +11,43 @@
 }
 
 iframe {
+    flex-grow: 1;
     width: 800px;
-    height: 500px;
+    min-height: 500px;
     border: 0;
 }
 
 .project-blurb {
-    color: white;
+    margin: 2rem 16%;
+    color: rgb(211, 211, 211);
 }
 
-.project-blurb {
-    margin: 0 20%;
+@media screen and (max-width: 768px) {
+    iframe {
+        width: 100%;
+    }
+
+    .project-blurb {
+        margin: 2rem 10%;
+    }
 }
 
 .project-blurb h3, p, a {
-    padding: 10px 0;
+    padding: 0.8rem 0;
+}
+
+.eyespy-project {
+    padding: 0.8rem 0;
 }
 
 .project-blurb a {
-    color: white;
+    color: rgb(211, 211, 211);
+}
+
+.project-blurb p {
+    font-size: 1rem
+}
+
+.project-blurb h3 {
+    font-size: 1.5rem;
 }
