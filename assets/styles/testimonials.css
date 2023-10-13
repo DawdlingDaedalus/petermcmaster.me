@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 768px) {
     .testimonials-container {
-        flex-direction: column;
+        flex-direction: column;  /* Switch to vertical layout when mobile */
     }
 }
 
@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 768px) {
     .testimonial-one .testimonial-text {
-        max-width: 330px;
+        max-width: 330px; /* Adjust text width when mobile */
         padding: 1rem 1rem;
     }
 }

@@ -7,7 +7,7 @@
 }
 
 .content-background {
-    background-image: linear-gradient(to bottom right, #36363a, #1b1020); /* fades navbar to footer */
+    background-image: linear-gradient(to bottom right, #36363a, #1b1020); /* entire color background sans header/footer */
 }
 
 .content {
@@ -22,7 +22,7 @@
     padding: 80px 0 40px 0;
 }
 
-.content-header h1 {
+.content-header h1 { /* text specs for all */
     text-align: center;
     color: rgb(211, 211, 211);
     margin-bottom: 20px;
@@ -55,7 +55,7 @@ section:not(#about) {
     padding: 40px 80px;
     /*border-style: double;
     border-width: 4px;
-    border-color: #c6c6c6;*/
+    border-color: #c6c6c6;*/  /* maybe add border later */
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
 }
 
@@ -70,7 +70,7 @@ section:not(#about) {
   
   .fade-in-section {
     opacity: 0; /* Initially hidden */
-    transition: opacity 1s; /* Optional: For a smooth fade in */
+    transition: opacity 1s; /* smooth fade in */
   }
   
   .fade-in-section.visible {
