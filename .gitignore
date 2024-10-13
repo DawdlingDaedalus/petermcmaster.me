@@ -1,0 +1,36 @@
+# Ignore .vscode settings
+.vscode/
+
+# Ignore node_modules (for JavaScript projects that use Node.js)
+node_modules/
+
+# Ignore compiled files (e.g., minified JavaScript and CSS)
+*.min.js
+*.min.css
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Ignore PHP storm/JetBrains IDE config files
+.idea/
+
+# Ignore PHP composer vendor directory (if applicable)
+vendor/
+
+# Ignore cache and session files
+*.cache
+*.session
+
+# Ignore DS_Store (for macOS users)
+.DS_Store
+
+# Ignore all other editor-specific settings
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+
+# Ignore build/ and dist/ directories
+dist/
+build/
