@@ -1,1 +1,2 @@
-# Repo for Personal Website https://petermcmaster.me
+# Personal Website for Peter McMaster
+### contains my software engineering portfolio, work history, and education
